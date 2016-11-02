@@ -15,6 +15,7 @@
 		09CF606C1DC71A2B0022C83D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09CF606A1DC71A2B0022C83D /* LaunchScreen.storyboard */; };
 		09CF60771DC71A2C0022C83D /* ComponentsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CF60761DC71A2C0022C83D /* ComponentsTests.m */; };
 		09CF60821DC71A2C0022C83D /* ComponentsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CF60811DC71A2C0022C83D /* ComponentsUITests.m */; };
+		09CF60921DC71BB00022C83D /* SY_PicLableBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CF60911DC71BB00022C83D /* SY_PicLableBtn.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		09CF607D1DC71A2C0022C83D /* ComponentsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComponentsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09CF60811DC71A2C0022C83D /* ComponentsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComponentsUITests.m; sourceTree = "<group>"; };
 		09CF60831DC71A2C0022C83D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09CF60901DC71BB00022C83D /* SY_PicLableBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SY_PicLableBtn.h; sourceTree = "<group>"; };
+		09CF60911DC71BB00022C83D /* SY_PicLableBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SY_PicLableBtn.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		09CF605B1DC71A2B0022C83D /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				09CF608F1DC71AF50022C83D /* PicLabBtn */,
 				09CF605F1DC71A2B0022C83D /* AppDelegate.h */,
 				09CF60601DC71A2B0022C83D /* AppDelegate.m */,
 				09CF60621DC71A2B0022C83D /* ViewController.h */,
@@ -138,6 +142,15 @@
 				09CF60831DC71A2C0022C83D /* Info.plist */,
 			);
 			path = ComponentsUITests;
+			sourceTree = "<group>";
+		};
+		09CF608F1DC71AF50022C83D /* PicLabBtn */ = {
+			isa = PBXGroup;
+			children = (
+				09CF60901DC71BB00022C83D /* SY_PicLableBtn.h */,
+				09CF60911DC71BB00022C83D /* SY_PicLableBtn.m */,
+			);
+			path = PicLabBtn;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +288,7 @@
 			files = (
 				09CF60641DC71A2B0022C83D /* ViewController.m in Sources */,
 				09CF60611DC71A2B0022C83D /* AppDelegate.m in Sources */,
+				09CF60921DC71BB00022C83D /* SY_PicLableBtn.m in Sources */,
 				09CF605E1DC71A2B0022C83D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,6 +437,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Components/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = shenyunxiang.Components;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -434,6 +449,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Components/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = shenyunxiang.Components;
 				PRODUCT_NAME = "$(TARGET_NAME)";
